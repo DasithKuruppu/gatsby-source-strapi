@@ -25,6 +25,7 @@
   "homepage": "http://strapi.io",
   "scripts": {
     "prepublish": "npm run build",
+    "preinstall": "npm run build",
     "build": "babel src --out-dir .",
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --write 'src/**/*.js'",
