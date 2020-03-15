@@ -30,7 +30,9 @@ module.exports = async ({
   const documents = await axios(apiEndpoint, fetchRequestConfig)
 
   // Map and clean data.
-  return contentType ? documents.data.map(item => clean(item)): clean(documents.data)
+  return contentType
+    ? documents.data.map(item => clean(item))
+    : clean(documents.data)
 }
 
 /**
