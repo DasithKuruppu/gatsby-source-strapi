@@ -66,7 +66,7 @@ exports.sourceNodes = async (
 
   // Fetch existing strapi nodes
   const existingNodes = getNodes().filter(
-    n => n.internal.owner === `gatsby-source-strapi`
+    n => n.internal.owner === `gatsby-source-strapi-v2`
   )
 
   // Touch each one of them

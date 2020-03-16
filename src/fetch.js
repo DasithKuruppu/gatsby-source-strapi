@@ -32,7 +32,7 @@ module.exports = async ({
   // Map and clean data.
   return contentType
     ? documents.data.map(item => clean(item))
-    : clean(documents.data)
+    : [clean(documents.data)]
 }
 
 /**
